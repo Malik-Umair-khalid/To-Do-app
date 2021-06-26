@@ -1,0 +1,50 @@
+body{
+    background-image: linear-gradient(to right, #5368d8, #2ba8bc);
+}
+.todoMainDiv{
+    margin: 10px auto;
+    background-color: aqua;
+    padding: 20px;  
+    width: 500px;
+    transform: rotate(360deg);
+}
+
+.headerDiv{
+    text-align: center;
+}
+.Btn{
+    display: block;
+    margin: 10px auto;
+}
+.headerDiv>input{
+    width: 100%;
+}
+.mainList{
+    padding: 2px;
+}
+.mainList>li{
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.javaBtn{
+    float: right;
+    margin-left: 2px;
+}
+.listInput{
+    border: none;
+   background-color: aqua;
+   width: 60%;
+}
+
+.bb{
+    border : none;
+    border-bottom: 5px solid red; 
+    outline: none !important;
+    background-color: aqua;
+}
+.bnb{
+    border: none;
+    outline: none !important;
+    background-color: aqua;
+}
