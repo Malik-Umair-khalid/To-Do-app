@@ -1,12 +1,14 @@
 body{
-    background-image: linear-gradient(to right, #5368d8, #2ba8bc);
+    background-image: linear-gradient(to left, #198754, #dc3545);
 }
 .todoMainDiv{
     margin: 10px auto;
-    background-color: aqua;
+    background-color: white;
     padding: 20px;  
     width: 500px;
     transform: rotate(360deg);
+    height: max-content;
+    border-radius: 5px ;
 }
 
 .headerDiv{
@@ -23,7 +25,7 @@ body{
     padding: 2px;
 }
 .mainList>li{
-    margin-top: 10px;
+    margin-top: 20px;
     list-style-type: none;
 }
 
@@ -33,18 +35,40 @@ body{
 }
 .listInput{
     border: none;
-   background-color: aqua;
-   width: 50px;
+   background-color: white;
+   width: 60%;
+   display: inline !important; 
 }
 
 .bb{
-    border : none;
-    border-bottom: 5px solid red; 
-    outline: none !important;
-    background-color: aqua;
+    /* border : none; */
+    border-bottom: 5px solid #dc3545; 
+    /* outline: none !important; */
+    /* background-color: aqua; */
+    width: 60%;
+    display: inline !important;
 }
 .bnb{
     border: none;
     outline: none !important;
-    background-color: aqua;
+    background-color: white;
+    width: 60%;
+}
+@media only screen and (max-width:400px){
+    .javaBtn{
+        display: flex;
+        justify-content: center;
+        float: none;
+        margin: 5px auto;
+    }
+    .listInput{
+        width: 100%;
+    }
+    .bb{
+        border : none;
+        border-bottom: 5px solid red; 
+        outline: none !important;
+        background-color: white;
+        width: 100%;
+    }
 }

@@ -36,10 +36,10 @@ function addbtn() {
         list.appendChild(inp)
         list.setAttribute('class', 'mianList')
         var btnD = document.createElement('button')
-        btnD.setAttribute('class', 'javaBtn')
+        btnD.setAttribute('class', 'javaBtn btn btn-danger')
         btnD.setAttribute('onClick', 'dete(this)')
         var buttonE = document.createElement('button')
-        buttonE.setAttribute('class', 'javaBtn')
+        buttonE.setAttribute('class', 'javaBtn btn btn-success')
         buttonE.setAttribute('id', 'editBtn')
         buttonE.setAttribute('onClick', 'edit(this)')
         var buttonEText = document.createTextNode('Edit')
@@ -66,7 +66,7 @@ function edit(myeditBtn){
 if(myeditBtn.innerText === 'Edit'){
         myeditBtn.innerText = 'Update'
         myeditBtn.previousSibling.previousSibling.disabled = false;
-        myeditBtn.previousSibling.previousSibling.classList = 'bb';
+        myeditBtn.previousSibling.previousSibling.classList = 'bb form-control';
     }
     else{
         myeditBtn.innerText = 'Edit'
